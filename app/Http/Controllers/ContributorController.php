@@ -15,15 +15,9 @@
 		 *
 		 * @return \Illuminate\Http\Response
 		 */
-		public function index(Request $request): View
+		public function index(Request $request)
 		{
-			switch ($request->action) {
-				//  case "index":
-				//    return view('contributor.'.$request->action, ['data' => Contributor::all()]);
-				//	case "success":
-				default:
-					return view('contributor.'.$request->action, ['data' => Collection::all()]);
-			}
+
 		}
 
 		/**

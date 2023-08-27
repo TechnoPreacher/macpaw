@@ -18,25 +18,23 @@
 		public function index(Request $request)
 		{
 
-		$data= $request->validate([
-				'action' => 'required',
-			]);
 
-			switch ($data['action']) {
+			$action = isset($request->action) ? $request->action : '';
+
+			switch ($action) {
 				case "new":
 				case "success":
 				case "retrive":
-					return view('collection.'.$request->action);
+					return view('collection.'.$action);
 				case "index":
-					return view('collection.'.$request->action, ['data' => Collection::all()]);
+					return view('collection.'.$action, ['data' => Collection::all()]);
 			}
 
-			$request->validate([
-				'collectionId' => 'required',
-			]);
+
+			$collectionId = isset($request->collectionId) ? $request->collectionId : '';
 
 			return redirect()->action(
-				[CollectionController::class, 'show'], ['collection' => $request->collectionId]
+				[CollectionController::class, 'show'], ['collection' => $collectionId]
 			);
 		}
 
