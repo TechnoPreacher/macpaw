@@ -1,22 +1,22 @@
-###root route for demonstration
+### root route for demonstration
 ![img.png](img.png)
 
-###demonstrstion of validation when create new collection:
+### demonstrstion of validation when create new collection:
 ![img_1.png](img_1.png)
 
-###all collections from DB
+### all collections from DB
 ![img_2.png](img_2.png)
 
-###additional info for selected collection
+### additional info for selected collection
 ![img_3.png](img_3.png)
 
-###asc filter
+### asc filter
 ![img_4.png](img_4.png)
 
-###desc filter
+### desc filter
 ![img_5.png](img_5.png)
 
-###not closed colletions
+### not closed colletions
 ![img_6.png](img_6.png)
 
 
